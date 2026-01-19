@@ -1,0 +1,57 @@
+print("LA CASA QUE NO DEBÍA ABRIRSE")
+
+print("Llegás a una casa abandonada al final de la calle.")
+print("La puerta está entreabierta y las luces apagadas.\n")
+
+print("1) Entrar a la casa")
+print("2) Alejarte y volver a casa")
+
+op1 = input("Elige 1 o 2: ")
+
+if op1 == "2":
+    print("\nTe vas sin mirar atrás.")
+    print("FINAL 1: Nunca sabrás qué había dentro.")
+    exit()
+
+print("\nEntrás a la casa. El aire es frío.")
+print("Escuchás un ruido en el piso de arriba.\n")
+
+print("1) Subir las escaleras")
+print("2) Explorar la planta baja")
+
+op2 = input("Elige 1 o 2: ")
+
+if op2 == "1":
+    print("\nLas escaleras crujen bajo tus pies.")
+    print("Una puerta al fondo está cerrada.\n")
+
+    print("1) Abrir la puerta")
+    print("2) Volver atrás")
+
+    op3 = input("Elige 1 o 2: ")
+
+    if op3 == "1":
+        print("\nLa habitación está vacía.")
+        print("Pero la puerta se cierra detrás de vos.\n")
+        print("FINAL 2: La casa no te deja salir.")
+    else:
+        print("\nBajás las escaleras apresurado.")
+        print("FINAL 3: Lográs escapar, pero algo te sigue.")
+else:
+    print("\nEncontrás una foto vieja sobre la mesa.")
+    print("La persona de la foto se parece a vos.\n")
+
+    print("1) Tomar la foto")
+    print("2) Dejarla donde está")
+
+    op4 = input("Elige 1 o 2: ")
+
+    if op4 == "1":
+        print("\nSentís un mareo.")
+        print("Recordás cosas que nunca viviste.\n")
+        print("FINAL SECRETO: La casa siempre fue tuya.")
+    else:
+        print("\nDejás la foto y salís corriendo.")
+        print("FINAL 4: Algo quedó atrás observándote.")
+
+  
