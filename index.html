@@ -29,7 +29,14 @@
 </head>
 <body>
 
-<h1 id="mensaje">Hola, solo quería decirte algo importante.</h1>
+<h1 id="mensaje">
+  Hola, solo quería decirte algo importante.<br>
+  Bueno, en realidad no tanto.<br>
+  Solo quería que leyeras esto hasta acá.<br>
+  Felicitaciones por nada.<br>
+  Adiós.
+</h1>
+
 <button onclick="cambiarMensaje()">Cambiar mensaje</button>
 <p>Clicks: <span id="contador">0</span></p>
 <button onclick="sumarClick()">Sumar click</button>
@@ -38,13 +45,12 @@
 <script>
 function cambiarMensaje() {
   const mensajes = [
-    "Hola, solo quería decirte algo importante.\nBueno, en realidad no tanto.\nSolo quería que leyeras esto hasta acá.\nFelicitaciones por nada.\nAdiós.",
-    "Leíste esto… bravo.\nO no, no importa.\nNada que ver, solo te hice perder un minuto.\nAdiós.",
-    "Hola, sí, a vos…\nQuería darte un consejo secreto que cambiaría todo.\nNah, mentira.\nSolo queríamos verte leer hasta aquí.\nFelicitaciones por nada."
+    "Hola, solo quería decirte algo importante.<br>Bueno, en realidad no tanto.<br>Solo quería que leyeras esto hasta acá.<br>Felicitaciones por nada.<br>Adiós.",
+    "Leíste esto… bravo.<br>O no, no importa.<br>Nada que ver, solo te hice perder un minuto.<br>Adiós.",
+    "Hola, sí, a vos…<br>Quería darte un consejo secreto que cambiaría todo.<br>Nah, mentira.<br>Solo queríamos verte leer hasta aquí.<br>Felicitaciones por nada."
   ];
-  // Reemplaza los saltos de línea por un salto en HTML
-  const mensajeConSaltos = mensajes[Math.floor(Math.random()*mensajes.length)].replace(/\n/g, "\n");
-  document.getElementById('mensaje').innerText = mensajeConSaltos;
+  // Mostrar el mensaje con saltos de línea
+  document.getElementById('mensaje').innerHTML = mensajes[Math.floor(Math.random()*mensajes.length)];
 }
 
 function sumarClick() {
